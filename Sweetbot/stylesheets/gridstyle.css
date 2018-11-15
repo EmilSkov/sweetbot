@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* henter et andet style ind i mit eget*/
+@import "simplegrid.css";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	background: #ddd;
+}
