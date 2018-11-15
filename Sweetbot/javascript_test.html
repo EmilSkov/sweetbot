@@ -54,8 +54,20 @@
 		<h1>Opgave 4</h1>
 		<p>Css-farve</p>
 		
-		<input type="color" id="farve" />
+		<input type="tekst" id="farve" />
 		<input type="button" id="farveknap" value="Tryk her" onClick="farveklik()" />
+		<div id="farven">
+		Velkommen
+		</div>
+		
+		<h1>Opgave 5</h1>
+		<p>tekst med caps</p>
+		
+		<input type="tekst" id="stortekst" />
+		<input type="button" id="capknap" value="Tryk her" onClick="capklik()" />
+		<div id="stortskrift">
+			teksten bliver stort her
+		</div>
 		
 	</main>
 	
@@ -94,6 +106,14 @@
 		{
 			var visfarve = document.getElementById("farve").value;
 			
+			document.getElementById("farven").style.color = visfarve;
+			
+		}
+		function capklik()
+		{
+			var storbogstaver = document.getElementById("stortekst").value;
+			var res = storbogstaver.toUpperCase();
+			document.getElementById("stortskrift").innerHTML = res;
 		}
 	</script>
 </body>
