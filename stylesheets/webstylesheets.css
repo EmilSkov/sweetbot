@@ -5,7 +5,6 @@ Body {
 	margin: 0;
 	padding: 0;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	background: #6D6D6D;
 }
 
 .logo {
@@ -31,6 +30,7 @@ li {
     float: left;
 	margin: 7px;
 	margin-top: 40px;
+	opacity: 0.5;
 }
 
 li a {
@@ -42,21 +42,19 @@ li a {
 }
 
 li a:hover {
-    background-color: #AAAAAA;
+    background-color: #DF9B67;
 }
 
 a {
 	text-decoration: none;
 	color: black;
 }
-.active {
-    background-color: #4CAF50;
-}
+
 
 /*section 1*/
 .projectbox {
 	display: flex;
-	height: 1000px;
+	height: 500px;
 	margin: 4%;
 	justify-content: space-between;
 }
@@ -68,13 +66,16 @@ a {
 	max-width: 40%;
 	float: left;
 	overflow: hidden;
-	background: #8E8E8E;
+	background: rgba(181,178,176,0.2);
 	margin: 5px;
+	border: 1px solid #000000;
 	
 }
 .column .imgbox {
 	position: relative;
 	margin: 10px;
+	background: #FFFFFF;
+	box-shadow: 0 2px 5px 0;
 	
 }
 .column .imgbox img {
@@ -82,6 +83,7 @@ a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 
 .column .details h3 {
@@ -107,17 +109,18 @@ a {
 
 #sidebanner {
 	text-align: center;
-	max-width: 130px;
+	max-width: 500px;
 	height: 250px;
     position: fixed;
     z-index: 1;
     top: 200px;
     right: 0px;
-    background: #eee;
+    background: #fff;
     overflow-x: hidden;
     padding: 8px 0;
-	opacity: 0.5;
+	opacity: 0.7;
 }
+
 .banner {
 	position: fixed;
 	/*z-index: 1;*/
