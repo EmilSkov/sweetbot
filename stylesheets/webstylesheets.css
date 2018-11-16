@@ -9,6 +9,7 @@ Body {
 }
 
 .logo {
+	top: 0px;
 	float: left;
 }
 /*navigation*/
@@ -111,7 +112,7 @@ a {
     position: fixed;
     z-index: 1;
     top: 200px;
-    right: 10px;
+    right: 0px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
@@ -121,5 +122,5 @@ a {
 	position: fixed;
 	/*z-index: 1;*/
     top: 175px;
-    right: 10px;
+    right: 0px;
 }
