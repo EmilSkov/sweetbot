@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+Body {
+	margin: 0;
+	padding: 0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+h1 {
+	font-size: 250%
+}
+h2 {
+	font-size: 1.1em;
+}
+h3 {
+	font-size: 1.1em;
+}
+.logo {
+	top: 0px;
+	
+}
+/*navigation*/
+
+header {
+	margin: 0 auto;
+	height: 100px;
+	top: 0;
+}
+
+ul {
+	display:block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	float: right;
+	margin-top:-90px;
+	margin-right:3em;
+	/*position: relative;*/	
+}
+
+li {
+    float: left;
+	margin: 7px;
+
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+	
+}
+
+.menu:hover {
+    background-color: #DF9B67;
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+.navbar {
+	
+	max-width: 100%;
+	float: right;
+
+}
+.kurv {
+	margin-top: -0.8em;
+ 	
+}
+
+#buttonback {
+	background: black;
+	color: white;
+	width: 3.5vw;
+	height: 3vh;
+	float: right;
+	position: absolute;
+	top: 27vh;
+	right: 4vw;
+	border-radius: 5px;
+}
+
+/*section 1*/
+
+
+
+.column {
+	margin: 1em;
+	height: 20%;
+	max-height: 500px;
+	width: 25%;
+	min-width: 140px;
+	min-height: auto;
+	justify-content: space-between;
+	max-width: 40%;
+	overflow: hidden;
+	background: rgba(181,178,176,0.2);
+	margin-right: 4em;
+	border: 1px solid #000000;
+	float:right;
+	display: block;
+	position: relative;
+}
+.column .imgbox {
+	position: relative;
+	margin: 10px;
+	background: #FFFFFF;
+	box-shadow: 0 2px 5px 0;
+
+}
+.column .imgbox img {
+	max-width: 75%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.column .details h3 {
+	margin-top: 10%;
+	margin-bottom: 2%;
+	color: black;
+	text-align: center;
+	position: relative;
+	max-width: 100%;
+	align-content: center;
+}
+.column .details .detailstekst {
+	margin: 10px;
+	padding: 0 10px 0 10px;
+	max-width: 700%;
+	line-height: 1.3;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.produkter {
+	display: inline-block;
+	position: relative;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+.seprodukter {
+	text-align: center;
+	margin-bottom: 10%;
+}
+/*.produktbeskrivelse {
+	margin-right: 10%;*/
+	
+
+
+.beskrivelse-box {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.products {
+	border: 1px solid black;
+	text-align: center;
+	width: 25%;
+	margin: 3%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.sales-img {
+	width: 100%;
+	height: auto;
+}
+button {
+	background: rgba(181,178,176,0.5);
+	border-radius: 7px;
+	margin-bottom: 4%;
+	width: 4vw;
+	height: 25px;
+	min-width: 55px;
+}
+img {
+	align-content: center;
+}
+
+
+/*Footer {
+	bottom: 0;
+	max-width: 100%;
+	height: 50px;
+	background: rgba(181,178,176,0.7);
+}
+
+Footer ul {
+	list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+	float: left;
+	color: black;
+}
+Footer li {   
+	float: left;
+}*/
+
+Footer li a {
+   
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+	
+}

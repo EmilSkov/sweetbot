@@ -6,8 +6,11 @@ Body {
 	padding: 0;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-
+p {
+	font-size: 0.9em;
+}
 .logo {
+	max-width: 100%;
 	top: 0px;
 	float: left;
 }
@@ -18,47 +21,48 @@ header {
 	height: 100px;
 	top: 0;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 	float: right;
 }
-
-li {
-    float: left;
+header li {
+	float: left;
 	margin: 7px;
 	margin-top: 40px;
 	opacity: 0.5;
 }
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 5px 10px;
-    text-decoration: none;
+header li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 5px 10px;
+	text-decoration: none;
 }
-
-li a:hover {
-    background-color: #DF9B67;
+header li a:hover {
+	background-color: #DF9B67;
 }
-
-a {
+header a {
 	text-decoration: none;
 	color: black;
 }
-
+.nav_mobile {
+	display: none;
+}
 
 /*section 1*/
+.projekter {
+	width: 100%;
+	
+}
 .projectbox {
 	display: flex;
-	height: 500px;
+	height: 450px;
 	margin: 4%;
 	justify-content: space-between;
 }
-
 .column {
 	position: relative;
 	max-height: 500px;
@@ -69,23 +73,26 @@ a {
 	background: rgba(181,178,176,0.2);
 	margin: 5px;
 	border: 1px solid #000000;
-	
+}
+.column a {
+	text-decoration: none;
+	color: black;
+}
+.column:hover {
+	box-shadow: inset 0 0 0 1px Black;
 }
 .column .imgbox {
 	position: relative;
 	margin: 10px;
 	background: #FFFFFF;
 	box-shadow: 0 2px 5px 0;
-	
 }
 .column .imgbox img {
 	max-width: 75%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
-
 .column .details h3 {
 	margin-top: 50px;
 	margin: 30px;
@@ -95,7 +102,6 @@ a {
 	max-width: 100%;
 	align-content: center;
 }
-
 .column .details .detailstekst {
 	margin: 10px;
 	padding: 0 10px 0 10px;
@@ -104,26 +110,93 @@ a {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
-
 #sidebanner {
 	text-align: center;
 	max-width: 500px;
 	height: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 200px;
-    right: 0px;
-    background: #fff;
-    overflow-x: hidden;
-    padding: 8px 0;
-	opacity: 0.7;
+	position: fixed;
+	z-index: 1;
+	top: 200px;
+	right: 0px;
+	background: #000000;
+	overflow-x: hidden;
+	padding: 8px 0;/*opacity: 0.7;*/
 }
-
+#sidebanner img {
+	margin: auto;
+	padding: auto;
+	top: 0;
+	max-width: 70%;
+}
 .banner {
 	position: fixed;
 	/*z-index: 1;*/
-    top: 175px;
-    right: 0px;
+	top: 175px;
+	right: 0px;
+	color: #df9b67;
+	opacity: 1;
+}
+Footer {
+	bottom: 0;
+	max-width: 100%;
+	height: 50px;
+	background: rgba(181,178,176,0.7);
+}
+Footer ul {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+	color: black;
+}
+Footer li {
+	float: left;
+}
+Footer li a {
+	display: block;
+	color: black;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1076px) {
+body {
+	background-color: blue;
+}
+.banner {
+	display: none;
+}
+	nav {
+		display: none;
+	}
+	.projectbox {
+		-ms-flex:100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+body {
+	background-color: lightblue;
+}
+Footer {
+	display: none;
+}
+.projectbox {
+	display: none;
+}
+nav{
+	display: none;
+	}
+header {
+	position: absolute;
+}
+header .nav_mobile ul {
+		 background: #F50004;
+		max-width: 100%;
+		 height: 100px;
+	}
 }
